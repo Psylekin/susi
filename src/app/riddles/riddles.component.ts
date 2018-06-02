@@ -1,13 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-riddles',
   templateUrl: './riddles.component.html',
-  styleUrls: ['./riddles.component.css']
+  styles: ['p{text-align: center}']
 })
 export class RiddlesComponent implements OnInit {
 
-  constructor() { }
+  cheatcode = '';
+
+  constructor() {
+  }
+
+  onSubmit(form: NgForm) {
+    this.cheatcode = form.value;
+    console.log(form.value);
+  }
 
   ngOnInit() {
   }

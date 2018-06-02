@@ -1,3 +1,34 @@
 <p>
-  riddles works!
+  Na dann mal los. Hier kommt das erste Rätsel!
 </p>
+
+<button class="btn btn-primary" (click)="switch =! switch">
+    Okay, ich bin bereit!
+</button>
+  
+<p *ngIf="switch">Switch</p>
+
+<div [ngSwitch]="cheatcode" > 
+  <app-crossword-riddle *ngSwitchCase="10"></app-crossword-riddle>
+  <app-riddles *ngSwitchCase="10"></app-riddles>
+  <app-hex-riddle *ngSwitchCase="10"></app-hex-riddle>
+  <app-numbers-riddle *ngSwitchCase="10"></app-numbers-riddle>
+  <app-poetic-riddle *ngSwitchCase="10"></app-poetic-riddle>
+  <app-solution-riddle *ngSwitchCase="10"></app-solution-riddle>
+</div>
+  
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" >
+  <div>
+    <div class="form-group">
+        <label for="Cheatcode">Cheatcode</label>
+        <input  type="text"
+                class="form-control"
+                id="cheatcode"
+                ngModel
+                name="cheatcode">
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Absenden
+      </button>
+  </div>
+</form>
