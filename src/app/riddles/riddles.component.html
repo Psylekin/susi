@@ -1,34 +1,15 @@
 <p>
-  Na dann mal los. Hier kommt das erste Rätsel!
+  Ich werde dir verschiedene Rätsel stellen. <br>
+  Wenn du denkst, dass du die richtige Antwort kennst, <br>
+  dann schreibe bitte einfach den Code in das Kästchen weiter unten <br>
+  und drücke auf abschicken! <br>
+  <br>
+  Probieren wir es aus! <br>
+  Klick auf Okay, wenn du bereit bist! <br>
 </p>
 
 <button class="btn btn-primary" (click)="switch =! switch">
     Okay, ich bin bereit!
 </button>
-  
-<p *ngIf="switch">Switch</p>
 
-<div [ngSwitch]="cheatcode" > 
-  <app-crossword-riddle *ngSwitchCase="10"></app-crossword-riddle>
-  <app-riddles *ngSwitchCase="10"></app-riddles>
-  <app-hex-riddle *ngSwitchCase="10"></app-hex-riddle>
-  <app-numbers-riddle *ngSwitchCase="10"></app-numbers-riddle>
-  <app-poetic-riddle *ngSwitchCase="10"></app-poetic-riddle>
-  <app-solution-riddle *ngSwitchCase="10"></app-solution-riddle>
-</div>
-  
-<form (ngSubmit)="onSubmit(f)" #f="ngForm" >
-  <div>
-    <div class="form-group">
-        <label for="Cheatcode">Cheatcode</label>
-        <input  type="text"
-                class="form-control"
-                id="cheatcode"
-                ngModel
-                name="cheatcode">
-      </div>
-      <button type="submit" class="btn btn-primary">
-        Absenden
-      </button>
-  </div>
-</form>
+<p *ngIf="switch">Gut!<br>Was ist denn… <br>sagen wir… <br>ehm…<br>7 + 9?</p>

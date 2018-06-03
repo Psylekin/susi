@@ -8,11 +8,18 @@
 
 <p>Du kannst ein QR-Code folgen. Ziemlich sweet! <br>
     Ich hab gehört, dass du gerne wissen möchtest, <br>
-    was wir am 29.06.2018 19 Uhr  machen, nicht wahr? <br>
+    was wir am 29.06.2018 um 19 Uhr  machen, nicht wahr? <br>
     Tja, dafür stehen dir nur noch ein paar Fragen im Weg.
 </p>
 
-<app-riddles></app-riddles>
+<hr>
+<router-outlet></router-outlet>
+<hr>
+
+<br>
+<input type="text" name="cheatcode" id="cheatcode" #input (input)="0" > 
+<br>
+<a class="btn btn-default" [routerLink]="['/', input.value]">Aus<strong>po</strong>bieren</a>
 
 <footer>
   <div class="container-fluid">
