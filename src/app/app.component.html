@@ -12,14 +12,21 @@
     Tja, dafür stehen dir nur noch ein paar Fragen im Weg.
 </p>
 
+
 <hr>
 <router-outlet></router-outlet>
 <hr>
 
-<br>
-<input type="text" name="cheatcode" id="cheatcode" #input (input)="0" > 
-<br>
-<a class="btn btn-default" [routerLink]="['/', input.value]">Aus<strong>po</strong>bieren</a>
+
+<div>
+  <input type="text" name="cheatcode" id="cheatcode" #input (input)="0" > 
+</div>
+<div style="text-align: center;">
+  <a class="btn btn-default" [routerLink]="['/', input.value]">Aus<strong>po</strong>bieren</a>
+</div>
+
+
+
 
 <footer>
   <div class="container-fluid">

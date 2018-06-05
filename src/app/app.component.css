@@ -1,7 +1,4 @@
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+footer {
     width: 100%;
     color: black;
     text-align: center;
@@ -20,5 +17,11 @@ input{
 }
 
 a{
+    text-align: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+div{
     text-align: center;
 }
