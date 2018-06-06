@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class RiddlesComponent implements OnInit {
 
+  switch = false;
 
   constructor() {
   }

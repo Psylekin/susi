@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SolutionRiddleComponent implements OnInit {
 
+  switch = false;
+
   constructor() { }
 
   ngOnInit() {
